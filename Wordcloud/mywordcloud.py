@@ -16,7 +16,7 @@ def CreateWordcloud(text):
     ##フォントの選択
     #font_path=".\Fonts\ipaexg.ttf"
     #font_path=".\Fonts\DotGothic16-Regular.ttf"
-    font_path=r"C:\Users\HMI\source\repos\fal2bro\Tools\Wordcloud\Fonts\DotGothic16-Regular.ttf"
+    font_path=".\Fonts\BIZUDGothic-Bold.ttf"
 
 
     # WordCloudオブジェクトを作成
