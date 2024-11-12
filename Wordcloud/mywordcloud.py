@@ -14,9 +14,9 @@ def CreateWordcloud(text):
     filtered_text = filter_words(text)
 
     ##フォントの選択
-    #font_path=".\Fonts\ipaexg.ttf"
-    #font_path=".\Fonts\DotGothic16-Regular.ttf"
-    font_path=".\Fonts\BIZUDGothic-Bold.ttf"
+    #font_path="Wordcloud\Fonts\ipaexg.ttf"
+    #font_path="Wordcloud\Fonts\DotGothic16-Regular.ttf"
+    font_path=r"Wordcloud\Fonts\BIZUDGothic-Bold.ttf"
 
 
     # WordCloudオブジェクトを作成
