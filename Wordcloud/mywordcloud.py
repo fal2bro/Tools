@@ -6,6 +6,7 @@ import re
 def CreateWordcloud(text):
 
     # MeCabを使用して日本語の単語を抽出
+
     #mecab = MeCab.Tagger("-Owakati")
     #text_wakati = mecab.parse(text)
 
@@ -15,7 +16,7 @@ def CreateWordcloud(text):
     ##フォントの選択
     #font_path=".\Fonts\ipaexg.ttf"
     #font_path=".\Fonts\DotGothic16-Regular.ttf"
-    font_path=".\Fonts\BIZUDGothic-Bold.ttf"
+    font_path=r"C:\Users\HMI\source\repos\fal2bro\Tools\Wordcloud\Fonts\DotGothic16-Regular.ttf"
 
 
     # WordCloudオブジェクトを作成
@@ -40,7 +41,7 @@ def filter_words(text):
     node = mecab.parseToNode(text)
     words = []
     
-    # ストップワードリスト
+    # ストップワードリスト, 適宜修正すること
     stop_words = {'思い','さい','せ','よう','い','さ','う','よ','の', 'が', 'は', 'に', 'を', 'と', 'も', 'で', 'から', 'や', 'ば', 'へ', 'けど', 'です', 'ます', 'この', 'その', 'あの', 'だ', 'いる', 'ある', 'する', 'こと'}
     
     while node:
@@ -60,6 +61,6 @@ def filter_words(text):
 
 if __name__ == '__main__':
     filename = input("ファイルパスを指定してください: ") #txtファイル
-    with open(filename, 'r', encoding='utf-8') as file:
+    with open(filename, 'r', encoding='shift_jis') as file:
         mytext = file.read()
     CreateWordcloud(mytext)
